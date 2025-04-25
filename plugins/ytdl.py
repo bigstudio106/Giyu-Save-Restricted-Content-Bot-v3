@@ -121,7 +121,7 @@ async def process_audio(client, event, url, cookies_env_var=None):
                     pass
                 audio_file.tags["TIT2"] = TIT2(encoding=3, text=title)
                 audio_file.tags["TPE1"] = TPE1(encoding=3, text="Team SPY")
-                audio_file.tags["COMM"] = COMM(encoding=3, lang="eng", desc="Comment", text="Processed by Team SPY")
+                audio_file.tags["COMM"] = COMM(encoding=3, lang="eng", desc="Comment", text="Processed by MOVIE INSIDER")
  
                 thumbnail_url = info_dict.get('thumbnail')
                 if thumbnail_url:
