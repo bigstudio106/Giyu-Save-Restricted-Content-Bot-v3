@@ -9,8 +9,8 @@ import sys
 
 client = TelegramClient("telethonbot", API_ID, API_HASH)
 app = Client("pyrogrambot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
-userbot = Client("", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
-
+userbot = Client("userbot", api_id=API_ID, api_hash=API_HASH, session_string=STRING) 
+    
 async def start_client():
     if not client.is_connected():
         await client.start(bot_token=BOT_TOKEN)
